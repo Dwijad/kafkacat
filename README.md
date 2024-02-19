@@ -40,11 +40,12 @@ The docker image for Kcat is available [here](https://hub.docker.com/r/solsson/k
               - "exec tail -f /dev/null"
     status: {}
 
+### Build custom Kcat image
  
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njk2MTc4MDgsMTQ2NjgyODEyNSwtMz
+eyJoaXN0b3J5IjpbLTE5ODI5MTU2OTYsMTQ2NjgyODEyNSwtMz
 A3MTkzOTg1XX0=
 -->
