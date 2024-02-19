@@ -3,9 +3,12 @@
 
 Kcat is a netcat for Apache Kafka mainly used for debugging state of kafka cluster, its metadata, topics/partitions.
 
+The docker image for [Kcat](https://hub.docker.com/r/solsson/kafka/tags) is available here.
 
+ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjgyODEyNSwtMzA3MTkzOTg1XX0=
+eyJoaXN0b3J5IjpbOTQyMzU4OTA0LDE0NjY4MjgxMjUsLTMwNz
+E5Mzk4NV19
 -->
