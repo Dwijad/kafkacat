@@ -42,13 +42,13 @@ The docker image for Kcat is available [here](https://hub.docker.com/r/solsson/k
 
 ### Build custom Kcat image
  
-Build your own custom Kcat docker image from the Dockerfile
+Build your own custom `Kcat` docker image from the `Dockerfile`
 
     $ DOCKER_BUILDKIT=1 docker buildx build -t localhost:5000/kcat:latest  --no-cache --progress=plain .
 
 ### SSL/SASL support
 
-To connect Kafka cluster with SASL_SSL support, convert brokers certificate and key in PEM format.
+To connect Kafka cluster with `SASL_SSL` support, convert brokers certificate and key in `PEM` format.
 
     $ keytool -exportcert -alias broker-0 -keystore kafka-broker-0.keystore.jks -rfc -file certificate.pem
     $ keytool -v -importkeystore -srckeystore kafka-broker-0.keystore.jks -srcalias broker-0 -destkeystore cert_and_key.p12 -deststoretype PKCS12
@@ -69,6 +69,6 @@ More examples of running Kcat are [here](https://github.com/edenhill/kcat/tree/m
 https://github.com/edenhill/kcat/tree/master
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODg0NjI5MSwtMzQ3NDE3NDU2LC0xNj
+eyJoaXN0b3J5IjpbMTQzMTAwNDQ4NywtMzQ3NDE3NDU2LC0xNj
 AxNzYwNDEsMTQ2NjgyODEyNSwtMzA3MTkzOTg1XX0=
 -->
