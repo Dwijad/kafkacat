@@ -1,4 +1,5 @@
 # kafkacat 
+![kcat_small](https://github.com/Dwijad/kafkacat/assets/12824049/2070ad85-5e41-456d-8360-f83a2ff42501)
 
 
 
