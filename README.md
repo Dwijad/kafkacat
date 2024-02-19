@@ -3,7 +3,7 @@
 
 Kcat is a netcat for Apache Kafka mainly used for debugging state of kafka cluster, its metadata, topics/partitions.
 
-The docker image for [Kcat](https://hub.docker.com/r/solsson/kafka/tags) is available here.
+The docker image for Kcat is available [here](https://hub.docker.com/r/solsson/kafka/tags).
 
 ### Run Kcat in Docker
 
@@ -11,12 +11,40 @@ The docker image for [Kcat](https://hub.docker.com/r/solsson/kafka/tags) is avai
 
 ### Run Kcat in Kubernetes
 
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: kafkacat
+      name: kafkacat
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          run: kafkacat
+      strategy: {}
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            run: kafkacat
+        spec:
+          containers:
+          - image: solsson/kafkacat
+            name: kafkacat
+            resources: {}
+            command:
+              - sh
+              - -c
+              - "exec tail -f /dev/null"
+    status: {}
 
  
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExODQ4MTU1NCwxNDY2ODI4MTI1LC0zMD
-cxOTM5ODVdfQ==
+eyJoaXN0b3J5IjpbLTE3Njk2MTc4MDgsMTQ2NjgyODEyNSwtMz
+A3MTkzOTg1XX0=
 -->
