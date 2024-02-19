@@ -42,10 +42,13 @@ The docker image for Kcat is available [here](https://hub.docker.com/r/solsson/k
 
 ### Build custom Kcat image
  
+Build you custom Kcat docker image from the Dockerfile
+
+    $ DOCKER_BUILDKIT=1 docker buildx build -t localhost:5000/kcat:2  --no-cache --progress=plain .
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODI5MTU2OTYsMTQ2NjgyODEyNSwtMz
-A3MTkzOTg1XX0=
+eyJoaXN0b3J5IjpbMTQ3MjMxNjQwMSwxNDY2ODI4MTI1LC0zMD
+cxOTM5ODVdfQ==
 -->
