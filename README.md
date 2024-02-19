@@ -63,8 +63,11 @@ To connect Kafka cluster with SASL_SSL support, convert brokers certificate and 
 
     $ kafkacat -b test-kafka.default.svc.cluster.local:9092 -L -X security.protocol=SASL_SSL -X api.version.request=true -X sasl.mechanisms=PLAIN -X sasl.username=user1 -X sasl.password=password -X ssl.key.location=key.pem -X ssl.key.password=password -X ssl.certificate.location=certificate.pem -X ssl.ca.location=CARoot.pem  -t __consumer_offsets -C -f '\nKey (%K bytes): %k Value (%S bytes): %s Timestamp: %T Partition: %p Offset: %o\n'
 
+More examples of running Kcat are [here](https://github.com/edenhill/kcat/tree/master#examples).
+
+References:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDE3NjA0MSwxNDY2ODI4MTI1LC0zMD
-cxOTM5ODVdfQ==
+eyJoaXN0b3J5IjpbMjMyNDc2Nzg0LC0xNjAxNzYwNDEsMTQ2Nj
+gyODEyNSwtMzA3MTkzOTg1XX0=
 -->
