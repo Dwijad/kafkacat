@@ -46,9 +46,11 @@ Build you custom Kcat docker image from the Dockerfile
 
     $ DOCKER_BUILDKIT=1 docker buildx build -t localhost:5000/kcat:latest  --no-cache --progress=plain .
 
+### SSL/SASL support
 
+To connect Kafka cluster 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDY1NTkwNjAsMTQ2NjgyODEyNSwtMz
-A3MTkzOTg1XX0=
+eyJoaXN0b3J5IjpbNTgyMTUxMjk5LDE0NjY4MjgxMjUsLTMwNz
+E5Mzk4NV19
 -->
