@@ -65,9 +65,10 @@ To connect Kafka cluster with SASL_SSL support, convert brokers certificate and 
 
 More examples of running Kcat are [here](https://github.com/edenhill/kcat/tree/master#examples).
 
-References:
+### References:
+https://github.com/edenhill/kcat/tree/master
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMyNDc2Nzg0LC0xNjAxNzYwNDEsMTQ2Nj
-gyODEyNSwtMzA3MTkzOTg1XX0=
+eyJoaXN0b3J5IjpbLTM0NzQxNzQ1NiwtMTYwMTc2MDQxLDE0Nj
+Y4MjgxMjUsLTMwNzE5Mzk4NV19
 -->
