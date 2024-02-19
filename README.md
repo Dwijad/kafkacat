@@ -5,10 +5,15 @@ Kcat is a netcat for Apache Kafka mainly used for debugging state of kafka clust
 
 The docker image for [Kcat](https://hub.docker.com/r/solsson/kafka/tags) is available here.
 
+### Run Kcat in Docker
+
+    $ docker run -it edenhill/kcat:1.7.1 -b YOUR_BROKER -L
+
  
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyMzU4OTA0LDE0NjY4MjgxMjUsLTMwNz
-E5Mzk4NV19
+eyJoaXN0b3J5IjpbMTg0NDUwNzUxOCwxNDY2ODI4MTI1LC0zMD
+cxOTM5ODVdfQ==
 -->
