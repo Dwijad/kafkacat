@@ -26,17 +26,9 @@ RUN echo "Building kcat ....." \
 
 FROM confluentinc/cp-base-new:latest-ubi8
 
-LABEL maintainer="partner-support@confluent.io"
-LABEL vendor="Confluent"
-LABEL version=$GIT_COMMIT
-LABEL release=$PROJECT_VERSION
-LABEL name=$ARTIFACT_ID
+LABEL maintainer="dwijad"
 LABEL summary="kcat is a command line utility that you can use to test and debug Apache Kafka® deployments. You can use kcat to produce, consume, and list topic and partition information for Kafka. Described as “netcat for Kafka”, it is a swiss-army knife of tools for inspecting and creating data in Kafka."
-LABEL io.confluent.docker=true
-LABEL io.confluent.docker.git.id=$GIT_COMMIT
-ARG BUILD_NUMBER=-1
-LABEL io.confluent.docker.build.number=$BUILD_NUMBER
-LABEL io.confluent.docker.git.repo="confluentinc/kafkacat-images"
+
 
 USER root
 
