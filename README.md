@@ -48,9 +48,13 @@ Build you custom Kcat docker image from the Dockerfile
 
 ### SSL/SASL support
 
-To connect Kafka cluster 
+To connect Kafka cluster with SASL_SSL support, convert brokers keystore/truststore certificate in PEM format.
+
+$ keytool -exportcert -alias broker-0 -keystore kafka-broker-0.keystore.jks -rfc -file certificate.pem
+$ keytool -v -importkeystore -srckeystore kafka-broker-0.keystore.jks -srcalias broker-0 -destkeystore cert_and_key.p12 -deststoretype PKCS12
+$ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyMTUxMjk5LDE0NjY4MjgxMjUsLTMwNz
+eyJoaXN0b3J5IjpbMjQxMzkzNzE4LDE0NjY4MjgxMjUsLTMwNz
 E5Mzk4NV19
 -->
