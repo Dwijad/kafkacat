@@ -1,7 +1,7 @@
 # kcat in Docker
 ![kcat_small](https://github.com/Dwijad/kafkacat/assets/12824049/2070ad85-5e41-456d-8360-f83a2ff42501)
 
-Kcat is a netcat for Apache Kafka fromainly used for debugging state of kafka cluster, its metadata, topics/partitions.
+Kcat is a netcat for Apache Kafka from [edenhill/kcat](https://github.com/edenhill/kcat) mainly used for debugging state of kafka cluster, its metadata, topics/partitions.
 
 The docker image for Kcat is available [here](https://hub.docker.com/r/solsson/kafka/tags).
 
@@ -42,7 +42,7 @@ The docker image for Kcat is available [here](https://hub.docker.com/r/solsson/k
 
 ### Build custom Kcat image
  
-Build you custom Kcat docker image from the Dockerfile
+Build your own custom Kcat docker image from the Dockerfile
 
     $ DOCKER_BUILDKIT=1 docker buildx build -t localhost:5000/kcat:latest  --no-cache --progress=plain .
 
@@ -69,6 +69,6 @@ More examples of running Kcat are [here](https://github.com/edenhill/kcat/tree/m
 https://github.com/edenhill/kcat/tree/master
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNTc5MjA0MywtMzQ3NDE3NDU2LC0xNj
+eyJoaXN0b3J5IjpbLTI0ODg0NjI5MSwtMzQ3NDE3NDU2LC0xNj
 AxNzYwNDEsMTQ2NjgyODEyNSwtMzA3MTkzOTg1XX0=
 -->
