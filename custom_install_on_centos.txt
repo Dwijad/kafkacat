@@ -1,0 +1,64 @@
+Install Kafkacat in RHEL/CentOS 7
+=================================
+
+librdkafka - https://github.com/edenhill/librdkafka
+===================================================
+
+[root@kafka-client ~]# yum install epel-release
+[root@kafka-client ~]# yum install librdkafka-devel 
+
+
+Install libyajl (for JSON support, optional)
+============================================
+
+[root@kafka-client ~]# yum install yajl yajl-devel
+
+
+Install jansson
+===============
+
+[root@kafka-client ~]# yum install jansson
+
+Install libcurl-devel
+=====================
+
+[root@kafka-client ~]# yum install libcurl libcurl-devel
+
+
+To install avro-c create a confluent repository
+===============================================
+
+[root@kafka-client ~]# vi /etc/yum.repos.d/confluent.repo
+[Confluent.dist]
+name=Confluent repository (dist)
+baseurl=https://packages.confluent.io/rpm/5.4/7
+gpgcheck=1
+gpgkey=https://packages.confluent.io/rpm/5.4/archive.key
+enabled=1
+
+[Confluent]
+name=Confluent repository
+baseurl=https://packages.confluent.io/rpm/5.4
+gpgcheck=1
+gpgkey=https://packages.confluent.io/rpm/5.4/archive.key
+enabled=1
+
+Install avro-c
+==============
+
+[root@kafka-client ~]# yum install  avro-c-devel
+
+Install Kafkacat
+================
+
+[root@kafka-client ~]# git clone https://github.com/edenhill/kafkacat.git
+[root@kafka-client ~]# cd kafkacat
+[root@kafka-client ~]# ./configure
+[root@kafka-client ~]# make
+[root@kafka-client ~]# make install
+
+[root@kafka-client ~]# kafkacat -V
+kafkacat - Apache Kafka producer and consumer tool
+https://github.com/edenhill/kafkacat
+Copyright (c) 2014-2019, Magnus Edenhill
+Version 1.6.0-5-g9d0234 (JSON, librdkafka 0.11.5 builtin.features=gzip,snappy,ssl,sasl,regex,lz4,sasl_gssapi,sasl_plain,sasl_scram,plugins)
